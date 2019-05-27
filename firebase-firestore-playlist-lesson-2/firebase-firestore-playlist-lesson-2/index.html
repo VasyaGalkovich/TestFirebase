@@ -1,0 +1,44 @@
+<html>
+    <head>
+       <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+        
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <h1>Cloud Cafe</h1>
+
+        <div class="content">
+
+            <form id="add-cafe-form"></form>
+
+            <ul id="cafe-list"></ul>
+
+        </div>
+
+        
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAzn0WSm1MZS7qt_ElIgeFMgD3C9SM4cRk",
+    authDomain: "testtimetable-58529.firebaseapp.com",
+    databaseURL: "https://testtimetable-58529.firebaseio.com",
+    projectId: "testtimetable-58529",
+    storageBucket: "testtimetable-58529.appspot.com",
+    messagingSenderId: "725015296917",
+    appId: "1:725015296917:web:cc46af637378bafd"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+            
+</script>
+        
+        <script src="app.js"></script>
+    </body>
+</html>
